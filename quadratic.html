@@ -1,0 +1,283 @@
+<html>
+<head>
+<title>Quadratic Equation</title>
+</head>
+<body>
+
+<table>
+<tr>
+<th>a</th>
+<td></td>
+<th>b</th>
+<td></td>
+<th>c</th>
+<td></td>
+</tr>
+<tr>
+<td><input name="txt_a" id="txt_a" type="text" maxlength="5" size="3" value="1" /></td>
+<td>X<sup>2</sup> + </td>
+<td><input name="txt_b" id="txt_b" type="text" maxlength="5" size="3" value="1" /></td>
+<td>X + </td>
+<td><input name="txt_c" id="txt_c" type="text" maxlength="5" size="3" value="1" /></td>
+<td><button name="bt_calc" id="bt_calc" onClick="jv_calc()">Calculate</button></td>
+</tr>
+</table>
+
+<br />
+
+<table name="tbl_math" id="tbl_math" style="display: none;">
+<!---Equation--->
+<tr>
+<td>
+	<strong>Equation</strong>
+	<table>
+	<tr>
+	<td>-b + &#x221a;</td>
+	<td style="border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	b<sup>2</sup> - 4ac
+	</td>
+	<tr>
+	<td colspan="2" style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	2a
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+
+<!---Step 1: Replace variables--->
+<tr>
+<td>
+	<br />
+	<strong>Step 1: replace variables</strong>
+	<table>
+	<tr>
+	<td><span name="sp_1b1" id="sp_1b1"></span> &#xb1; &#x221a;</td>
+	<td style="border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_1b2" id="sp_1b2"></span><sup>2</sup> - 4(<span name="sp_1a1" id="sp_1a1"></span>)(<span name="sp_1c" id="sp_1c"></span>)
+	</td>
+	<tr>
+	<td colspan="2" style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	2(<span name="sp_1a2" id="sp_1a2"></span>)
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+
+<!---Step 2: Do Multiplication--->
+<tr>
+<td>
+	<br />
+	<strong>Step 2: Do Multiplication and Square</strong>
+	<table>
+	<tr>
+	<td><span name="sp_2b" id="sp_2b"></span> &#xb1; &#x221a;</td>
+	<td style="border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_21" id="sp_21"></span> - <span name="sp_22" id="sp_22"></span>
+	</td>
+	<tr>
+	<td colspan="2" style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_23" id="sp_23"></span>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+
+<!---Step 3: Subtraction--->
+<tr>
+<td>
+	<br />
+	<strong>Step 3: Subtraction</strong>
+	<table>
+	<tr>
+	<td><span name="sp_3b" id="sp_3b"></span> &#xb1; &#x221a;</td>
+	<td style="border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_31" id="sp_31"></span>
+	</td>
+	<tr>
+	<td colspan="2" style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_32" id="sp_32"></span>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+
+<!---Even Square Root--->
+
+<!---Step 4: Resolve Square Root--->
+<tr>
+<td>
+	<br />
+	<strong>Step 4: Resolve Square Root</strong>
+	<table>
+	<tr>
+	<td><span name="sp_4ab" id="sp_4ab"></span> &#xb1;</td>
+	<td>
+	<span name="sp_4a1" id="sp_4a1"></span>
+	</td>
+	<tr>
+	<td colspan="2" style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_4a2" id="sp_4a2"></span>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+
+<!---Step 5: Split Equation--->
+<tr>
+<td>
+	<br />
+	<strong>Step 5: Split Equation</strong>
+	
+	<table>
+	<tr>
+	
+	<td><span name="sp_5a1b" id="sp_5a1b"></span> + <span name="sp_5a11" id="sp_5a11"></span></td>
+	
+	<td rowspan="2"> and </td>
+	
+	<td><span name="sp_5a2b" id="sp_5a2b"></span> - <span name="sp_5a21" id="sp_5a21"></span></td>
+	
+	<tr>
+	<td style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_5a12" id="sp_5a12"></span>
+	</td>
+	
+	<td style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_5a22" id="sp_5a22"></span>
+	</td>
+	
+	</tr>
+	</table>
+</td>
+</tr>
+
+<!---Step 6: Resolve Top of Equation--->
+<tr>
+<td>
+	<br />
+	<strong>Step 6: Resolve Top of Equation</strong>
+	
+	<table>
+	<tr>
+	
+	<td><span name="sp_6a11" id="sp_6a11"></span></td>
+	
+	<td rowspan="2"> and </td>
+	
+	<td><span name="sp_6a21" id="sp_6a21"></span></td>
+	
+	<tr>
+	<td style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_6a12" id="sp_6a12"></span>
+	</td>
+	
+	<td style="text-align: center; border-style: solid none none none; border-width: 1px; border-color: #000000;">
+	<span name="sp_6a22" id="sp_6a22"></span>
+	</td>
+	
+	</tr>
+	</table>
+</td>
+</tr>
+
+<!---Step 7: Final Answer--->
+<tr>
+<td>
+	<br />
+	<strong>Step 7: Final Answer</strong><br />
+	
+	<span name="sp_7a1" id="sp_7a1"></span> and <span name="sp_7a2" id="sp_7a2"></span>
+</td>
+</tr>
+
+</table>
+
+<script type="text/javascript">
+	function jv_calc(){
+		jv_a = parseFloat( document.getElementById('txt_a').value );
+		if( isNaN( jv_a ) ){ alert( 'a is not a number');return; };
+		
+		jv_b = parseFloat( document.getElementById('txt_b').value );
+		if( isNaN( jv_b ) ){ alert( 'b is not a number');return; };
+		
+		jv_c = parseFloat( document.getElementById('txt_c').value );
+		if( isNaN( jv_c ) ){ alert( 'c is not a number');return; };
+		
+		document.getElementById('sp_1b1').innerHTML = jv_b * -1;
+		document.getElementById('sp_1b2').innerHTML = jv_b;
+		document.getElementById('sp_1a1').innerHTML = jv_a;
+		document.getElementById('sp_1c').innerHTML = jv_c;
+		document.getElementById('sp_1a2').innerHTML = jv_a;
+		
+		document.getElementById('sp_2b').innerHTML = jv_b * -1;
+		document.getElementById('sp_21').innerHTML = jv_b * jv_b;
+		document.getElementById('sp_22').innerHTML = 4 * jv_a * jv_c;
+		document.getElementById('sp_23').innerHTML = 2 * jv_a;
+		
+		jv_square = jv_b * jv_b - 4 * jv_a * jv_c;
+		
+		document.getElementById('sp_3b').innerHTML = jv_b * -1;
+		document.getElementById('sp_31').innerHTML = jv_square;
+		document.getElementById('sp_32').innerHTML = 2 * jv_a;
+		
+		//Even square root
+		if( jv_square > 0 && Math.sqrt( jv_square ) % 1 == 0  ){
+			jv_squre = Math.sqrt( jv_square );
+			
+			document.getElementById('sp_4ab').innerHTML = jv_b * -1;
+			document.getElementById('sp_4a1').innerHTML = jv_square;
+			document.getElementById('sp_4a2').innerHTML = 2 * jv_a;
+			
+			document.getElementById('sp_5a1b').innerHTML = jv_b * -1;
+			document.getElementById('sp_5a11').innerHTML = jv_square;
+			document.getElementById('sp_5a12').innerHTML = 2 * jv_a;
+			
+			document.getElementById('sp_5a2b').innerHTML = jv_b * -1;
+			document.getElementById('sp_5a21').innerHTML = jv_square;
+			document.getElementById('sp_5a22').innerHTML = 2 * jv_a;
+			
+			document.getElementById('sp_6a11').innerHTML = ( jv_b * -1 ) + jv_square;
+			document.getElementById('sp_6a12').innerHTML = 2 * jv_a;
+			
+			document.getElementById('sp_6a21').innerHTML = ( jv_b * -1 ) - jv_square;
+			document.getElementById('sp_6a22').innerHTML = 2 * jv_a;
+			
+			document.getElementById('sp_7a1').innerHTML = ( ( jv_b * -1 ) + jv_square ) / 2 * jv_a;
+			document.getElementById('sp_7a2').innerHTML = ( ( jv_b * -1 ) - jv_square ) / 2 * jv_a;
+		} else {
+			alert( jv_sqrt_out( jv_square ) )
+			alert( jv_sqrt_in( jv_square ) )	
+		}
+		
+		document.getElementById('tbl_math').style.display = 'inline'; 	
+	}
+	
+	function jv_sqrt_out( jv_i ){
+		var jv_square = Math.sqrt( Math.abs( jv_i ) );
+		
+		if( jv_square % 1 == 0 ){
+			return jv_square;
+		}
+		
+		jv_square = parseInt( jv_square );
+		
+		for( var i = jv_square; i > 1; i-- ){
+			if( ( jv_i / ( i * i ) ) % 1 == 0 ){
+				return i;
+			}
+		}
+		return 1;
+	}
+	
+	function jv_sqrt_in( jv_i ){
+		var jv_square = jv_sqrt_out( jv_i );
+		return jv_i / ( jv_square * jv_square );
+	}
+</script>
+
+</body>
